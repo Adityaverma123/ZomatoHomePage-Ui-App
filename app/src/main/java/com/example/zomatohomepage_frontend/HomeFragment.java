@@ -59,16 +59,36 @@ private RestaurantAdapter adapter;
             @Override
             public void onClick(View view) {
                 circular_view.setVisibility(View.VISIBLE);
+                see_more.setVisibility(View.GONE);
             }
         });
         see_less.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 circular_view.setVisibility(View.GONE);
+                see_more.setVisibility(View.VISIBLE);
             }
         });
         recyclerView=view.findViewById(R.id.restaurants);
         restaurants=new ArrayList<>();
+        restaurants.add(new Restaurants(
+                "La pino'z Pizza",
+                "Fast Food, Pizza",
+                "4.0","150",
+                "1825",
+                R.drawable.food1));
+        restaurants.add(new Restaurants(
+                "Samosa Factory",
+                "Street Food",
+                "3.4","50",
+                "5100",
+                R.drawable.food2));
+        restaurants.add(new Restaurants(
+                "Madras Cafe",
+                "South Indian, Fast Food",
+                "4.1","100",
+                "14050",
+                R.drawable.food3));
         restaurants.add(new Restaurants(
                 "La pino'z Pizza",
                 "Fast Food, Pizza",

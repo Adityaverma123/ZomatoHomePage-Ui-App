@@ -52,7 +52,7 @@
                     android:layout_marginTop="5dp"
                     android:textStyle="bold"
                     android:textSize="16sp"
-                    android:layout_marginStart="5dp"
+                    android:layout_marginStart="10dp"
                     android:letterSpacing="0.02"/>
                 <include layout="@layout/circular_layout"/>
                 <RelativeLayout
@@ -70,14 +70,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
+                        android:layout_centerVertical="true"
                         android:text="see more"
                         />
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@id/see_text"
-                        android:layout_marginStart="5dp"
-                        android:src="@drawable/ic_history"/>
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrowdown"/>
 
                 </RelativeLayout>
                 <LinearLayout
@@ -105,14 +106,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
+                        android:layout_centerVertical="true"
                         android:text="see less"
                         />
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toEndOf="@id/see_text2"
-                        android:layout_marginStart="5dp"
-                        android:src="@drawable/ic_history"/>
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrowup"/>
 
                 </RelativeLayout>
                 </LinearLayout>
